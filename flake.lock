@@ -1,0 +1,109 @@
+{
+  "nodes": {
+    "gentooKeys": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-e2ph4EcO+RyqKTrQpnEVeUIQY60xHuJ3Ktu4hIOwSVs=",
+        "type": "file",
+        "url": "https://qa-reports.gentoo.org/output/service-keys.gpg"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://qa-reports.gentoo.org/output/service-keys.gpg"
+      }
+    },
+    "gentooSnapshot": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-hq3enTz9EFI6mxqYWXr4RShJeT99t0AZ/Mrp7ZjPqiA=",
+        "type": "file",
+        "url": "https://distfiles.gentoo.org/snapshots/portage-latest.tar.xz"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://distfiles.gentoo.org/snapshots/portage-latest.tar.xz"
+      }
+    },
+    "gentooSnapshotSig": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-dgP7PuMV+dd50mSKtZs10u523xhJgxaecIsfanOTZ7Q=",
+        "type": "file",
+        "url": "https://distfiles.gentoo.org/snapshots/portage-latest.tar.xz.gpgsig"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://distfiles.gentoo.org/snapshots/portage-latest.tar.xz.gpgsig"
+      }
+    },
+    "gentooStage3": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-LjH99E0tj9z6IV9bfNHzjAu2PwWbRpcfI5J2DoZvyAE=",
+        "type": "file",
+        "url": "https://distfiles.gentoo.org/releases/amd64/autobuilds/20261004T164559Z/stage3-amd64-openrc-20261004T164559Z.tar.xz"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://distfiles.gentoo.org/releases/amd64/autobuilds/20261004T164559Z/stage3-amd64-openrc-20261004T164559Z.tar.xz"
+      }
+    },
+    "gentooStage3Sig": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-2Zg0+++xemmq0U699+k/HM5ASFlrpCoc6uUYjROgkxw=",
+        "type": "file",
+        "url": "https://distfiles.gentoo.org/releases/amd64/autobuilds/20261004T164559Z/stage3-amd64-openrc-20261004T164559Z.tar.xz.asc"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://distfiles.gentoo.org/releases/amd64/autobuilds/20261004T164559Z/stage3-amd64-openrc-20261004T164559Z.tar.xz.asc"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1791048980,
+        "narHash": "sha256-KgItSKML8Xvte0B7/uGnBDsYzSnnKHcOaiUbgWBXLXw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a7868a727837f3c09cee2ce0ca671c76b1589fed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "portage": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1791041291,
+        "narHash": "sha256-vCuBK4fEL5yo7JIB0tQhjLq8DSflxLGkSTLQiQByDIY=",
+        "owner": "gentoo",
+        "repo": "portage",
+        "rev": "54c7ac99ed54dbae13520ea00083e214c7fc11c8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gentoo",
+        "repo": "portage",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "gentooKeys": "gentooKeys",
+        "gentooSnapshot": "gentooSnapshot",
+        "gentooSnapshotSig": "gentooSnapshotSig",
+        "gentooStage3": "gentooStage3",
+        "gentooStage3Sig": "gentooStage3Sig",
+        "nixpkgs": "nixpkgs",
+        "portage": "portage"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

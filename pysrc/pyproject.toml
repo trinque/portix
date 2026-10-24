@@ -1,0 +1,9 @@
+[tool.mypy]
+strict = true
+files = ["portix", "tests"]
+
+# Portage is the engine portix runs, not a library it checks: it ships no stubs, and
+# the modules that import it run inside a root against the pinned source.
+[[tool.mypy.overrides]]
+module = ["portage", "portage.*", "_emerge.*"]
+ignore_missing_imports = true
